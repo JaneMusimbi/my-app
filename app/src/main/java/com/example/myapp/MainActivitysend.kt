@@ -5,16 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class BMICalculatorActivity : AppCompatActivity() {
-    lateinit var btnsendmoney: Button
+
+class MainActivitysend : AppCompatActivity() {
+    lateinit var btncancel: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bmicalculator)
-        btnsendmoney = findViewById(R.id.btnsendmoney)
-        btnsendmoney.setOnClickListener {
-            val intent = Intent(this, MainActivitysend::class.java)
+        setContentView(R.layout.activity_main_activitysend)
+        btncancel = findViewById(R.id.btnCancel)
+        btncancel.setOnClickListener {
+            val intent = Intent(this, BMICalculatorActivity::class.java)
             startActivity(intent)
 
 
@@ -22,3 +23,5 @@ class BMICalculatorActivity : AppCompatActivity() {
         }
     }
 }
+
+

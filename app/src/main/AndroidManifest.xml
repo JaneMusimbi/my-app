@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
         <activity
+            android:name=".MainActivitysend"
+            android:exported="false" />
+        <activity
             android:name=".BMICalculatorActivity"
             android:exported="false" />
         <activity
